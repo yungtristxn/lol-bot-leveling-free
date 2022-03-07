@@ -14,30 +14,8 @@ lol_settings_path = "C:\\Riot Games\\League of Legends\\Config"
 
 def setup():
     globals.picture_path = os.path.join(os.getcwd(), "search_images")
-    find_league_location()
     save_user_files()
     set_bot_files()
-
-
-def find_league_location():
-    global lol_settings_path
-    print("Attempting to locate League of Legends...")
-    for r, d, f in os.walk("C:\\"):
-        for files in f:
-            if files == "LeagueClient.exe":
-                print("Successfully found %s" % r)
-                globals.lol_client_path = os.path.join(r, files)
-                lol_settings_path = os.path.join(r, "Config")
-                return
-    for r, d, f in os.walk("D:\\"):
-        for files in f:
-            if files == "LeagueClient.exe":
-                print("Successfully found %s" % r)
-                globals.lol_client_path = os.path.join(r, files)
-                lol_settings_path = os.path.join(r, "Config")
-                return
-    print("Failed to locate League of Legends.")
-
 
 def save_user_files():
     global user_settings_path

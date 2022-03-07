@@ -15,7 +15,7 @@ time_since_last_click = 0
 last_status = None
 
 # File variables
-lol_client_path = None
+lol_client_path = 'C:\\Riot Games\\League of Legends\\LeagueClient.exe'
 picture_path = None
 files_to_replace = ['game.cfg', 'input.ini']
 

@@ -80,6 +80,8 @@ def run():
         attempt_to_click_on(pictures.confirm, regions.confirm)
         attempt_to_click_on(pictures.find_match, regions.find_match)
         attempt_to_click_on(pictures.find_match_hover, regions.find_match)
+        attempt_to_click_on(pictures.findmatch2, regions.find_match)
+        attempt_to_click_on(pictures.findmatch2_hover, regions.find_match)
         attempt_to_click_on(pictures.accept, regions.accept)
 
         attempt_to_click_on(pictures.play_again, None)
